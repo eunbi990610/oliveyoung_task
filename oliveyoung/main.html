@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css"/> 
+</head>
+<body style="overflow-x: hidden">
+    <div class="wrap">
+
+
+        <header class="header">
+            <!-- 맨 위쪽 바 회원가입 -- 글로벌 -->
+            <div class="top_bar">
+                <ul class="top_bar_list">
+                    <li class="join">회원가입</li>
+                    <li class="login">로그인</li>
+                    <li class="cart">장바구니</li>
+                    <li class="order">주문배송</li>
+                    <li class="customer">고객센터</li>
+                    <li class="store">매장안내</li>
+                    <li class="global">Global</li>
+                </ul>
+            </div>
+            <!-- 올리브영 로고 , 검색창 div -->
+            <div class="header-mid">
+                
+                <div class="header_inner">
+                    <!-- 올리브영 로고 -->
+                    <img src="https://static.oliveyoung.co.kr/pc-static-root/image/comm/h1_logo.png" alt="올리브영" style="width:246px; height:40px;">
+                    <!-- 검색창 : 검색칸 + 돋보기 아이콘 -->
+                    <div class="header_inner-search_box">
+                        <form action="" method="">
+                            <div class="search_input">
+                                <input type="text" name="search-item" placeholder="상품,브랜드,성분 검색">
+                                <button class="search-icon">
+                                    <img class="search-icon" src="data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.44339 14.378C11.7226 14.3764 14.3796 11.7168 14.3779 8.43756C14.3763 5.15837 11.7167 2.50138 8.4375 2.50301C5.15831 2.50463 2.50132 5.16426 2.50294 8.44345C2.50457 11.7226 5.1642 14.3796 8.44339 14.378Z' stroke='%23131518' stroke-width='1.5'/%3E%3Cpath d='M16.9623 18.0436C17.2552 18.3365 17.7301 18.3365 18.023 18.0436C18.3159 17.7507 18.3159 17.2758 18.023 16.9829L16.9623 18.0436ZM11.9623 13.0436L16.9623 18.0436L18.023 16.9829L13.023 11.9829L11.9623 13.0436Z' fill='%23131518'/%3E%3C/svg%3E" alt="검색창 아이콘">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <!-- 오늘드림 -->
+                    <ul class="header_inner-list">
+                        <li class="delivery-my">
+                            <span>오늘드림</span>
+                            <div class="delivery-my">
+                                <img class="delivery-my-icon" src="https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_delivery_flag.png" alt="오늘드림_아이콘" >
+                            </div>
+                        </li>
+                        <li class="store">관심 매장소식</li>
+                        <li class="recent">최근 본 상품</li>
+                    </ul>
+                </div>     
+            </div>
+        </header>
+        
+        <!-- 카테고리와 메인 광고 이미지 -->
+        <div class="main">
+            
+            <!-- 카테고리 -->
+            <div class="category-box">
+                <div class="category">
+                    <img class="category-icon" src="https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_menu_off.png" alt="">    
+                    카테고리
+                </div>
+                <ul class="main_menu-list">
+                    <li>오특</li>
+                    <li>랭킹</li>
+                    <li>헬스+</li>
+                    <li>LUXE EDIT</li>
+                    <li>기획전</li>
+                    <li>세일</li>
+                    <li>기프트카드</li>
+                    <li>멤버십/쿠폰</li>
+                    <li>이벤트</li>
+                </ul>
+            </div>
+            
+            <!-- 메인 화면 이미지  -->
+            <div class="main-banner">
+                <img class="main-img" src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/1/2494395882598933174.jpg" alt="메인 사진">
+                
+                <div class="main_banner_wrap">
+                    
+                    <ul class="main-banner_categray">
+                        <li>스킨케어</li>
+                        <li>메이크업/네일</li>
+                        <li>미용소품</li>
+                        <li>더모코스메틱</li>
+                        <li>맨즈케어</li>
+                        <li>향수/디퓨저</li>
+                        <li>헤어케어</li>
+                        <li>바디케어</li>
+                        <li>건강식품</li>
+                        <li>푸드</li>
+                        <li>구강/건강용품</li>
+                        <li>여성/위생용품</li>
+                        <li>라이프/팬시</li>
+                        <li class="banner-awards">AWARDS</li>
+                    </ul>
+                    
+                    <div class="main-banner_ad">
+                        <div class="ad_categray">헬스+</div>
+                        <h1 class="ad_content">출석체크로 완성하는 건강루틴</h1>
+                        <span class="ad_categray-link">헬스+에서 확인하기</span>
+                        <div class="ad_categray-but">
+                            <button class="before">이전 슬라이드</button>
+                            <div>1 / 13</div>
+                            <button class="after">다음 슬라이드</button>
+                            <button class="stop">멈춤</button>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>   
+        
+        <!-- 선물하기 광고 -->
+        <div class="main-mid-banner">
+            <img src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/138/884097743576601254.jpg" alt="선물하기 광고 이미지">
+        </div>
+        
+        <!-- 상품 추천 -->
+        <div class="recommend-product">
+            
+            <article class="recom-product1">
+                <div class="recent-attention">요즘 주목 받는 상품</div>
+                <div class="moreBtn">더보기 ></div><!-- span으로돌리수 있으면 하기 -->
+                <div class="recom-product-items">
+                    <div class="recom-product-item">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0018/A00000018262703ko.jpg?l=ko" alt="메디힐 패드" style="width:215px; height: 215px;">
+                        
+                        <div class="item-infomation">
+                            <div class="item-name">
+                                <p>
+                                    [피부결] 넘버즈인 3번 보들보들 결 세럼 80ml 기획(+3번 결 세럼팩)
+                                </p>
+                            </div>
+                            <p class="item-price">
+                                <span class="price">38,000</span>
+                                <span class="selling-price">24,700</span>
+                            </p>
+                            <p class="item_flag">
+                                <span class="sale">세일</span>
+                                <span class="today-delivery">오늘드림</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="recom-product-item">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0019/A00000019391909ko.jpg?l=ko" alt="페리페라 치크" style="width:215px; height: 215px;">
+                        
+                        <div class="item-infomation">
+                            <div class="item-name">[화해1위]비건이펙트 클린 앤 글로우 청보리 LHA 젤 클렌저 205ml 기획 (+토너패드 4EA 증정)</div>
+                            <p class="item-price">
+                                <span class="selling-price">22,000</span>   
+                            </p>
+                            <p class="item_flag">
+                                <span class="today-delivery">오늘드림</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="change_recom-product-items">
+                    <div class="change-text">다른상품 추천해드릴게요   1</div>
+                </div>
+            </article>
+            
+            <article class="recom-product2">
+                <div class="recent-attention">고객님을 위한 추천 상품</div>
+                <div class="moreBtn">더보기 ></div>
+                <div class="recom-product-items">
+                    <div class="recom-product-item">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0019/A00000019124604ko.jpg?l=ko" alt="넘버즈인" style="width:215px; height: 215px;">
+                        
+                        <div class="item-infomation">
+                            <div class="item-name">[탄력광채] 넘버즈인 3번 결광가득 에센스 토너 200ml 기획 (+50ml 증정)</div>
+                            <p class="item-price">
+                                <span class="price">24,000</span>
+                                <span class="selling-price">18,000</span>
+                            </p>
+                            <p class="item_flag">
+                                <span class="sale">세일</span>
+                                <span class="today-delivery">오늘드림</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="recom-product-item">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0019/A00000019177402ko.jpg?l=ko" alt="넘버즈인" style="width:215px; height: 215px;">
+                        
+                        <div class="item-infomation">
+                            <div class="item-name">[피부결] 넘버즈인 3번 보들보들 결 세럼 50ml 기획 (+15ml 증정)</div>
+                            <p class="item-price">
+                                <span class="price">30,000</span>
+                                <span class="selling-price">22,500</span>   
+                            </p>
+                            <p class="item_flag">
+                                <span class="sale">세일</span>
+                                <span class="today-delivery">오늘드림</span>
+                                <span class="present">증정</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="change_recom-product-items">
+                    <div class="change-text">다른상품 추천해드릴게요   1</div>
+                    <!-- 버튼 -->
+                </div>
+            </article>
+        </div>
+        
+        <!-- 매주 행사 -->
+        <div class="weekly-special">
+            <div class="weekly-main-text">
+                <strong>Weekly Special</strong>
+            </div>
+            <div class="weekly-imgs"> 
+                <div class="weekly_container-img">
+                    <img class="img1" src="https://image.oliveyoung.co.kr/uploads/images//categoryBanner/7101962051148142227.png" 
+                    alt="이번주 광고1">
+                </div>
+                <div class="weekly-img-text">
+                    <dl>
+                        <dt>진정부터 차단까지</dt>
+                        <dt>여름맞이 라운드랩</dt>
+                        <dd>BEST특가+증정</dd>
+                    </dl>
+                </div>
+                <div class="weekly_container-img">
+                    <img class="img2" src="https://image.oliveyoung.co.kr/uploads/images//categoryBanner/8978030912705847649.jpg" 
+                    alt="이번주 광고2">
+                </div>
+                <div class="weekly-img-text">
+                    <dl>
+                        <dt>클렌즈샷 3종</dt>
+                        <dt>출시기념 1+1 할인</dt>
+                        <dd>푸룬 기특한일주일 추가 20%OFF</dd>    
+                    </dl>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 오직올리브영에서만 -->
+        
+            <div class="only_olive-head">
+                <div class="only_olive-head-top">
+
+                    <div class="text-name">오직 올리브영에서만</div>
+                    <ul class="cricel-button-lists">
+                        <li class="cricel-button-list">
+                            <button class="cricel-but1">1</button>
+                        </li>
+                        <li class="cricel-button-list">
+                            <button class="cricel-button">2</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="only_olive-imgs">
+                <ul>
+                    <div class="only_container-img">                        
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/6/4894377045379610010.jpg"
+                        alt="브링그린&배라">                  
+                    </div>
+                    <div class="only-img-text">
+                        <dl>
+                            <dt>브링그린&배라</dt>
+                            <dt>민트썬 콜라보</dt>       
+                            <dd>장바구니 4천원 쿠폰</dd>
+                        </dl>
+                    </div>
+                        
+                    <div class="only_container-img">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/6/5020919245245418664.jpg"
+                        alt="라우드어라운드">
+                    </div>
+                    <div class="only-img-text">
+                        <dl>
+                            <dt>라운드어라운드</dt>
+                            <dt>구매왕EVENT</dt>
+                            <dd>노보텔숙박권증정!</dd>                            </dl>
+                    </div>
+                    <div class="only_container-img">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/6/1756444333043020992.jpg"
+                        alt="곤약워터젤리">
+                    </div>
+                    <div class="only-img-text">
+                        <dl>
+                            <dt>가볍게 즐기는</dt>
+                            <dt>곤약워터젤리</dt>
+                            <dd>#다양한 맛으로 즐겨요</dd>
+                        </dl>
+                    </div>
+                </ul>
+            </div>
+        
+            
+        <!-- 상품 추천 광고 줄 / 이 상품 어때요?-->
+
+        <div class="commend_ad">
+            <div class="commend_ad-header">
+                <div class="header-name">
+                        이 상품 어때요?
+                </div>
+                <ul class="cricel-button-lists">
+                    <li class="cricel-button-list">
+                        <button class="cricel-but1">1</button>
+                    </li>
+                    <li class="cricel-button-list">
+                        <button class="cricel-button">2</button>
+                    </li>
+                    <li class="cricel-button-list">
+                        <button class="cricel-button">3</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="commend_ad-items">
+                <!-- 상품1 -->
+                <article class="commend_ad-item">
+                    <span class="commend_ad-item-img">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020566534ko.jpg?l=ko"
+                         alt="">
+                    </span>
+                    <div class="comm-ad-item_infomation">
+                        <div class="brand-name">오프온</div>
+                        <div class="comm-ad-item_name">[1만원 전원증정] 오프온 바디워시/로션/미스트 3종 택1(디렉터파이pick)</div>
+                        <p class="item-price">
+                            <span class="price">24,800</span>
+                            <span class="selling_min_price">22,800</span>   
+                        </p>
+                        <p class="item_flag">
+                            <span class="sale">세일</span>
+                            <span class="today-delivery">오늘드림</span>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 상품2 -->
+                <article class="commend_ad-item">
+                    <span class="commend_ad-item-img">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020629814ko.jpg?l=ko"
+                         alt="">
+                    </span>
+                    <div class="comm-ad-item_infomation">
+                        <div class="brand-name">키스</div>
+                        <div class="comm-ad-item_name">[NEW] KEYTH 키스 오드퍼퓸 8ml 6종 택1</div>
+                        <p class="item-price">
+                            <span class="price">28,000</span>
+                            <span class="selling_min_price">22,400</span>   
+                        </p>
+                        <p class="item_flag">
+                            <span class="coupon">쿠폰</span>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 상품3 -->
+                <article class="commend_ad-item">
+                    <span class="commend_ad-item-img">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020397401ko.jpg?l=ko"
+                         alt="">
+                    </span>
+                    <div class="comm-ad-item_infomation">
+                        <div class="brand-name">풀리오</div>
+                        <div class="comm-ad-item_name">풀리오 목 어깨 마사지기</div>
+                        <p class="item-price">
+                            <span class="price">109,000</span>
+                            <span class="selling-price" >97,900</span>   
+                        </p>
+                        <p class="item_flag">
+                            <span class="sale">세일</span>
+                            <span class="coupon">쿠폰</span>
+                            <span class="present">증정</span>
+                            <span class="today-delivery">오늘드림</span>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 상품4 -->
+                <article class="commend_ad-item">
+                    <span class="commend_ad-item-img">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020030505ko.jpg?l=ko"
+                         alt="">
+                    </span>
+                    <div class="comm-ad-item_infomation">
+                        <div class="brand-name">풀리오</div>
+                        <div class="comm-ad-item_name">풀리오 종아리 마사지기 지퍼형</div>
+                        <p class="item-price">
+                            <span class="price">129,000</span>
+                            <span class="selling-price" >110,000</span>   
+                        </p>
+                        <p class="item_flag">
+                            <span class="sale">세일</span>
+                            <span class="coupon">쿠폰</span>
+                            <span class="present">증정</span>
+                            <span class="today-delivery">오늘드림</span>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- update new -->
+        <div class="box">
+
+            <h3 class="update-new_head">
+                    <strong>신상 업데이트</strong>
+            </h3>
+                
+                
+                <div class="update-new_main">
+                    <!-- 신상 업데이트1 -->
+                    <article class="update-new_thing">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/397/6070446330273866209.png"
+                        alt="">
+                        <div class="update-new_thing_detail">
+                            <p>꾸덕하고 쫀득한 속세맛 단백질바</p>
+                            <p>단백질 15g, 당류 3g 미만! 갓성분 디저트</p>
+                        </div>
+                    </article>
+                    
+                    <!-- 신상 업데이트2 -->
+                    <article class="update-new_thing">
+                        <img src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/397/4612512383833538040.jpg"
+                        alt="">
+                        <div class="update-new_thing_detail">
+                            <p>공기처럼 가볍고 부드러운 발색</p>
+                            <p>투쿨포스쿨 프로타주 팔레트로 다채로운 메이크업 완성</p>
+                        </div>
+                    </article>
+               
+                </div>
+            </div>
+           
+            
+            <div class="more_but">
+                <button class="more_but-update">
+                신상 더보기
+                <!-- <span class="more_button-total">| 3</span> -->
+            </button>
+        </div>
+
+        <!-- 주목해야 할 브랜드  -->
+        <div class="attention_brand-box">
+            <div class="attention_brand-head">
+                <div class="header">
+                    주목해야 할 브랜드
+                </div>
+                <ul class="attention_brand-list">
+                    <li>
+                        <span class="now_brand">
+                            헤라
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         더툴랩   
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         에스쁘아   
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         키스미   
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         바이오더마   
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         AHC   
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         바닐라코   
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         메디힐   
+                        </span>
+                    </li>
+                    <li>
+                        <span class="at_brand">
+                         라운드랩   
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="attention_brand-main">
+
+            </div>
+        </div>
+
+        <!-- 헤라 이미지 -->
+        <div class="brand_info">
+            <div class="brand_info-img_box">
+                <img src="https://image.oliveyoung.co.kr/uploads/images/display/90000010001/9/7318371452368424472.jpg" 
+                alt="헤라">
+
+                <div class="img_shadow">
+                    <div class="img_shadow-in">
+                        <div class="brand-name">헤라</div>
+                        <div class="img">
+                            <img src="https://static.oliveyoung.co.kr/pc-static-root/image/main/icon_like_brand.png" alt="하트">
+                            <span>8,224명이 좋아합니다.</span>
+                        </div>
+                        <div class="arrow">
+                            <button class="before">이전 슬라이드</button>
+                            <button class="after">다음 슬라이드</button>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- 헤라 상품  -->
+        <div class="brand_info-items">
+
+            <!-- 헤라1 -->
+            <article class="brand_info-item">
+                <span class="brand_info-item_img">
+                    <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020277729ko.jpg?l=ko"
+                     alt="">
+                </span>
+                <div class="brand_info-item_infomation">
+                    <div class="brand-ad-item_name">[선착순 비치타월 증정] [한정기획] 헤라 블랙 쿠션 파운데이션 (본품15g+리필15g+미니쿠션21N5g+하이라이터)</div>
+                    <p class="item-price">
+                        <span class="price">74,000</span>
+                        <span class="selling_min_price">66,000</span>   
+                    </p>
+                    <p class="item_flag">
+                        <span class="sale">세일</span>
+                        <span class="present">증정</span>
+                        <span class="today-delivery">오늘드림</span>
+                    </p>
+                </div>
+            </article>
+
+            <!-- 헤라2 -->
+            <article class="brand_info-item">
+                <span class="brand_info-item_img">
+                    <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0019/A00000019066827ko.jpg?l=ko"
+                     alt="">
+                </span>
+                <div class="brand_info-item_infomation">
+                    <div class="brand-ad-item_name">[선착순 비치타월 증정] [한정기획] 헤라 실키 스테이 24H 롱웨어파운데이션 30g(+미니립1.1g+브러쉬+손거울)</div>
+                    <p class="item-price">
+                        <span class="price">70,000</span>
+                        <span class="selling_min_price">63,000</span>   
+                    </p>
+                    <p class="item_flag">
+                        <span class="sale">세일</span>
+                        <span class="present">증정</span>
+                        <span class="today-delivery">오늘드림</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+
+
+        <footer>
+            <div class="oneConts">
+                <ul class="oneConts-lists">
+                    <li>회사소개</li>
+                    <li>채용안내</li>
+                    <li>가맹점 개설문의</li>
+                    <li>상품입점 및 제휴문의</li>
+                    <li>사이버 감사실</li>
+                    <li>고객센터</li>
+                </ul>
+                <div class="family-group">
+                    <span class="group">
+                        CJ그룹 계열사 바로가기
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="twoConts">
+                <div class="twoConts-text">
+                    <img src="https://static.oliveyoung.co.kr/pc-static-root/image/footer/foot_logo.png" alt="올리브영 로고">
+                    <div class="twoConts-text_top">
+
+                        <div class="CJ_oliveyoung">
+                            <div class="CJ_olive-text">
+                                <b>씨제이올리브영 주식회사</b>
+                                <p>대표이사 : 이선정 | 사업자등록번호 : 809-81-01574</p>
+                                <p class="address">(04323) 서울특별시 용산구 한강대로 372, 24층 
+                                    <br>
+                                    (동자동, KDB타워)
+                                </p>
+                                <p>호스팅사업자 : CJ 올리브네트웍스</p>
+                                <p>통신판매업신고번호 : 2019-서울용산-1428</p>
+                                <p>이메일 : oliveweb@cj.net</p>
+                                <span class="link">사업자 정보확인</span>
+                            </div>
+
+                            <div class="CJ_olive-text">
+                                <p>
+                                    <span>이용약관</span>
+                                    <span>법적고지</span>
+                                </p>
+                                <b>개인정보처리방침</b>
+                                <p>청소년보호방침</p>
+                                <p>영상정보처리기기 운영/관리 방침</p>
+                                <p>이메일무단수집거부</p>
+                            </div>
+
+                            <div class="CJ_olive-text">
+                                <b>하나은행 구매안전 서비스</b>
+                                <p>
+                                    올리브영은 현금 결제한 금액에 대해
+                                    <br>
+                                    하나은행과 채무지급보증 계약을체결
+                                    <br>
+                                    하여 안전한 거래를 보장하고 있습니다
+                                </p>
+                                <span class="link">서비스 가입사실 확인</span>
+                            </div>
+                    </div>
+                    <div class="twoConts-box">
+                        <p>
+                            올리브영 홈페이지에서 판매되는 상품 중에는 올리브영에 입점한 개별 판매자가 판매하는 상품이 포함되어 있습니다. 개별 판매자의 판매 상품의 경우, 올리브영은 통신
+                            판매중개자로서 통신판매의 당사자가 아니며 판매자가 등록한 상품정보 및 거래 정보 등에 대하여 책임을 부담하지 않습니다.
+                        </p>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        
+            <div class="threeConts">
+                <ul class="threeConts-list">
+                    <li>정보보호 및 개인정보보호 관리체계 ISMS-P 인증 획득 </li>
+                    <li>인증 범위 : CJ올리브영 쇼핑몰 운영</li>
+                    <li>유효기간 : 2023.12.06~2026.12.05</li>
+                </ul>
+            </div>
+        
+            <div class="conts">
+                <div class="fourConts">
+                    <p>Copyright ⓒ CJ OliveYoung. All Rights Reserved.</p>
+                    <div class="sns">
+                        <h2>OLIVE YOUNG SNS</h2>
+                        <img src="https://static.oliveyoung.co.kr/pc-static-root/image/footer/iconf_facebook.png"
+                        alt="페이스북">
+                        <img src="https://static.oliveyoung.co.kr/pc-static-root/image/footer/iconf_instagram.png"
+                        alt="인스타그램">
+                        <img src="https://static.oliveyoung.co.kr/pc-static-root/image/footer/iconf_youtube.png"
+                        alt="유튜브">
+                        <img src="https://static.oliveyoung.co.kr/pc-static-root/image/footer/iconf_kakaotalk.png"
+                        alt="카카오톡">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+    </div>      
+        
+        
+        
+        
+    </div>
+    </body>
+    </html>

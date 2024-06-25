@@ -1,0 +1,1189 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #fff; */
+    font-family: Montserrat,-apple-system,NotoSansCJKkr,AppleSDGothicNeo,Roboto,dotum,"돋움",sans-serif;
+    white-space : normal
+}
+.wrap{
+    width: 100%;
+    min-width: 1020px;
+    /* height: 1000vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_bar{
+    height: 30px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.top_bar_list{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+
+    width: 1020px;
+    height: 30px;
+}
+
+.top_bar_list>li{
+    margin: 0 5px;
+
+    line-height: 30px;
+
+    font-size: 14px;
+    /* font-family: Montserrat,-apple-system,NotoSansCJKkr,AppleSDGothicNeo,Roboto,dotum,"돋움",sans-serif; */
+    color: #333;
+}
+.top_bar li:not(li:last-child)::after{
+    content: "|";
+    position: relative;
+    right: -4px ;
+}
+
+/* 올리브영 로고, 검색창 줄 */
+.header-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_inner{
+    width: 1020px;
+    height: 90px;
+    line-height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+/* 검색 창  */
+.header_inner-search_box{
+    border: 2px solid #82dc28;
+    border-radius: 20px;
+    width: 340px;
+    height: 40px;
+
+    margin: 7px 20px 0 60px;
+    /* padding: 0 10px 10px 20px; */
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/* 검색 입력창 */
+.search_input > input{
+    width: 300px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    border: none ;
+    outline: none;
+}
+
+/* 검색어 입력창 */
+.search_input{
+    width: 100%;
+    height: 38px;
+    border: 0;
+    padding: 0 10px;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+
+    color: #888;
+}
+/* 돋보기 아이콘 */
+.search-icon{
+    background-color: transparent;
+    border: none;
+}
+
+/* 검색어 박스 옆에 리스트 */
+.header_inner-list{
+    list-style-type: none;
+   
+    display: flex;
+}
+.header_inner-list > li{
+    font-size: 14px;
+    /* font-family: Montserrat,-apple-system,NotoSansCJKkr,AppleSDGothicNeo,Roboto,dotum,"돋움",sans-serif; */
+    color: #666;
+
+    /* padding: 10px; */
+    margin: 4px 8px;
+}
+
+/* 오늘드림 */
+.delivery-my{
+    display: flex;
+}
+.delivery-my > span{
+    font-weight: bold;
+}
+.delivery-my-icon{
+    width:22px; 
+    height:20px;
+    margin: 0 3px;
+}
+.header_inner-list li:not(li:last-child)::after{
+    content: "|";
+    position: relative;
+    right: -8px;
+    top: 0;
+    color: #777;
+}
+
+.store::after{
+    content: "^";
+    position: relative;
+    right: -4px;
+    top: 2px;
+}
+.recent::after{
+    content: "^";
+    position: relative;
+    right: -4px;
+    top: 2px;
+}
+
+
+/* main */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    
+}
+
+/* 카테고리 줄 */
+.category-box{
+    border-bottom: 2px solid #555;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* font-family:Montserrat,-apple-system,NotoSansCJKkr,AppleSDGothicNeo,Roboto,dotum,"돋움",sans-serif ; */
+    font-weight: 700;
+}
+.category{
+    width: 155px;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    padding-left:15px ;
+
+}
+.category-icon{
+    height: 10px;
+    margin: 0 8px; 
+}
+/* 메인 배너? */
+.main_menu-list{
+    width: 819px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    /* padding: 0 15px; */
+}
+.main_menu-list>li{
+    margin: 0 18px;
+    font-size: 16px;
+}
+
+/* 메인 광고 & 카테고리-리스트 */
+.main-banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main_banner_wrap{
+    position: absolute;
+    display: flex;
+    transform: translate(-200px, 0);
+}
+
+
+.main-banner_categray{
+    width: 170px;
+    height: 450px;
+    background-color:rgba(0,0,0,0.4);
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.main-banner_categray>li{
+    font-size: 13px;
+    width: calc(100% - 30px);
+    height: 31px;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: #fff;
+}
+.banner-awards{
+    width: 170px;
+    background-color:rgba(0,0,0,0.2);
+    padding: 0;
+}
+/* 메인 베너 이미지 내부 */
+.main-banner_ad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 360px;
+    height: 450px;
+
+    padding: 0 30px;
+}
+
+.ad_categray{
+    width: 360px;
+    height: 41px;
+
+    font-size: 18px;
+    padding-top: 20px;
+    
+    /* line-height: 20px; */
+
+    /* margin: ; */
+}
+
+.ad_content{
+    width: 300px;
+    height: 168px;
+    line-height: 56px;
+    /* padding: 0 60px 75px 0; */
+    padding: 0 60px 0 0;
+
+    font-size: 48px;
+    font-weight: 400;
+    word-break: keep-all;
+    /* word-break : 단어의 분리를 어떻게 할 것인지 결정
+     */
+}
+.ad_categray-link{
+    color: #666;
+    padding-bottom: 75px;
+}
+.ad_categray-but{
+    display: flex;
+    justify-content: left;
+}
+.ad_categray-but > div{
+    /* width: 50px;
+    height: 40px; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.ad_categray-but button{
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    border : transparent;
+    text-indent: -9999px;
+    /* text-indent :텍스트 들여쓰기, 내여 */
+}
+.ad_categray-but .before{
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_arrow40x40_2.png) no-repeat;
+}
+.ad_categray-but .after{
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_arrow40x40_2.png) no-repeat;
+    background-position: -40px 0;
+    /* 뒤집기?! */
+}
+.ad_categray-but .stop{
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_autoplay.png) no-repeat;
+    margin-left: 6px ;
+}
+
+/* 선물하기 광고 */
+
+.main-mid-banner{
+    display: flex;
+    justify-content: center;
+
+    margin: 55px 0 58px 0;
+}
+
+/* 메인 광고 바로 밑 상품 추천 2타입*/
+.recommend-product{
+    /* 크게 2개를 좌우로 배치 */
+    display: flex;
+    justify-content: center;
+    margin: 0 30px ;
+}
+.recom-product1,
+.recom-product2{
+    /* 큰거 한개 */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recom-product1{
+    border-right: 1px solid #DDDDDD ;
+}
+.recent-attention{
+
+    width: 450px;
+    height: 45px;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-left: 4px;
+}
+.moreBtn{
+    width: 450px;
+    height: 18px;
+    text-align: end;
+   
+    font-size: 15px;
+    font-weight: 500;
+    color: #aaa;
+
+    margin-bottom: 25px;
+
+}
+
+.recom-product-items{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+/* 이거 안먹힘 */
+/* .recom-product-img{
+    width: 215px;
+    height: 215px;
+} */
+.recom-product-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+.item-name{
+    margin: 8px 5px 0;
+    width: 195px;
+    height: 37px;
+    
+    /* white-space: ; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-word;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 0;
+    color: #000;
+}
+
+.item-price{
+    margin: 5px auto 0;
+    padding: 0 10px;
+}
+.price{
+    color: #a9a9a9;
+    font-size: 14px;
+    position: relative;
+    text-decoration: line-through;
+    /* text-decoration : 텍스트의 장식 선 모양 */
+    /* : upderline; 밑줄 */
+    /* : line-through; 텍스트 중간에 선 */
+}
+
+.price::after{
+    content:"원";
+    color:#a9a9a9;
+    font-size: 12px;
+}
+.selling-price,
+.selling_min_price{
+    color: #e02020;
+    font-size: 20px;
+}
+
+.selling-price::after{
+    content: "원";
+    color: #e02020;
+    font-size: 14px;
+}
+.item_flag{
+    width: 215px;
+}
+.item_flag > .sale,
+.item_flag > .today-delivery,
+.item_flag > .present,
+.item_flag > .coupon{
+    display: inline-block;
+    height: 18px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 2px;
+}
+.item_flag > .sale{
+    width: 40px;
+    background-color: #f65c60;
+}
+.item_flag > .today-delivery{
+    width: 60px;
+    background-color: #f374b7;
+}
+.item_flag > .present{
+    width: 40px;
+    background-color: #6fcff7;
+}
+.item_flag > .coupon{
+    width: 40px;
+    background-color: #9bce26;
+}
+
+.change_recom-product-items{
+    width: 510px;
+    height: 40px;
+
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.change-text{
+    width: 335px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    /* text-align: center; */
+
+    color: #454c53;
+    font-size: 14px;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .change-text::after{
+    content: "1 ";
+    color: #454c53;
+    font-size: 14px;
+    font-weight: 500;
+
+    
+
+} */
+.change-text::after{
+    content: "| 5";
+    color: #b2b8be;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+/* 위클리 광고 리스트  */
+.weekly-main-text{
+    height: 40px;
+    margin: 51px 0 8px 0;
+
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+.weekly-imgs{
+    display: flex;
+    justify-content: center;
+}
+
+.weekly_container-img{
+    width: 500px;
+    height: 227px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 10px;
+
+    
+}
+.weekly_container-img > .img1{
+    width: 100%;
+}
+.weekly_container-img > .img2{
+    transform: translateY(-14%);
+    width: 100%;
+}
+
+/*  dl: 용어 설명 목록 태그 
+    dt : 용어 제목  
+    dd: 용어 설명 */
+
+.weekly-img-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+.weekly-img-text dl{
+    position: absolute;
+    top: 65px;
+    left: -460px;
+    z-index: 1;
+}
+.weekly-img-text dl dt{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.weekly-img-text dl dd{
+    margin-top: 15px;
+    max-width: 215px;
+    font-size: 16px;
+}
+
+/* 오직 올리브영에서만 */
+
+.only_olive-head{
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.only_olive-head-top{
+    position: relative;
+}
+.text-name{
+    width: 1020px;
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+}
+.cricel-button-lists{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+}
+
+.cricel-button-list{
+    list-style-type: none;
+}
+.cricel-but1 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid #2f3030;
+    color: #fff;
+    background-color: #2f3030;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    list-style-type: none;
+}
+
+.cricel-button{
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid white;
+    color: #888;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+/* line-height: 선 높이 
+ 문장과 문장 사이의 높이 조절
+ */
+
+.only_olive-imgs > ul{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding: 18px 0 0;
+    /* align-items: center; */
+    /* display:flex 는 바로 나의 부모에게 줘야함 조부모 안됨 */
+}
+.only_olive-imgs > ul{
+    list-style-type: none;
+}
+.only_container-img{
+    width: 334px;
+    height: 145px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0 7.3px 0 0;
+}
+.only_container-img > img{
+    width: 100%;
+}
+.only-img-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+.only-img-text dl{
+    position: absolute;
+    left: -315px;
+}
+.only-img-text dl dt{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.only-img-text dl dd{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* 상품 추천 광고 / 이 상품 어때요? */
+.commend_ad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.commend_ad-header{
+    position: relative;
+}
+
+.header-name{
+    width: 1020px;
+
+    margin: 51px 0 8px 0;
+    text-align: center;
+}
+
+.header-name{
+    width: 1020px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+/* article 4개 배치 */
+
+.commend_ad-items{
+    display: flex;
+    justify-content: center;
+}
+.commend_ad-item{
+    padding: 30px 20px 35px 20px;
+}
+
+.commend_ad-item-img > img{
+    width: 215px;
+    height: 215px;
+}
+.comm-ad-item_infomation{
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comm-ad-item_infomation > .item_flag{
+    text-align: center;
+}
+.brand-name{
+    text-align: center;
+    color: #777;
+    font-weight: 700;
+    font-size: 14px;
+}
+.comm-ad-item_name{
+    width: 195px;
+    height: 37px;
+    padding: 2px 3px 0;
+    margin-top: 5px;
+    line-height: 18px;
+    font-size: 14px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-word;
+    color: #000;
+}
+.selling_min_price::after{
+    content: "원~";
+    font-size:14px;
+    color: #e02020;
+    font-weight: 700;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 신상 업데이트 */
+.update-new_head{
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+}
+.update-new_head > strong{
+    font-size: 26px;
+    color: #131518;
+    font-weight: bold;
+    text-align: center;
+}
+/* 신상 업데이트 이미지 두개 배치 */
+.update-new_main{
+    width: 1020px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+}
+
+/* 신상 업데이트 이미지 */
+.update-new_thing > img{
+    width: 500px;
+    height: 282px;
+    border-radius: 4px;
+}
+
+/* 신상 업데이트 이미지 설명 */
+.update-new_thing_detail p:first-of-type {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #131518;
+}
+
+.update-new_thing_detail p:first-of-type+p{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #50585f;
+}
+
+/* 신상 업데이트 / 더보기 버튼  */
+/*  버튼 아닌거 같음  */
+.more_but{
+    margin: 40px 0 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.more_but-update{
+    width: 335px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    padding: 10px 0 11px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* 주목해야 할 브랜드  */
+
+/* 헤더 */
+.attention_brand-head{
+    margin: 51px 0 8px;
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.attention_brand-list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    padding: 20px 0;
+}
+.attention_brand-list >li{
+    margin: 4px;
+    
+}
+
+.now_brand{
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    padding: 5px 16px 6px;
+  
+    border-radius: 20px;
+    font-size: 14px;
+}
+.at_brand{
+    
+    border: 1px solid #dadde0;;
+    color: #757d86;
+    padding: 5px 16px 6px;
+  
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* img */
+.brand_info-img_box{
+    display: flex;
+    justify-content: center;
+}
+
+.brand_info-img_box >img{
+    width: 1020px;
+    height: 400px;
+}
+
+.img_shadow{
+    width: 1020px;
+    height: 400px;
+    position: absolute; 
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(19, 21, 24, 0) 0, rgba(19, 21, 24, .4) 100%);
+}
+.img_shadow-in{
+    width: 1020px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+
+ /* url(https://static.oliveyoung.co.kr/pc-static-root/image/main/icon_brand_slide_button.png) 0 0 / 100% auto no-repeat; */
+/* .img_shadow-in{
+    position: relative;
+} */
+
+.img_shadow-in > .brand-name{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #fff;
+}
+.img_shadow-in > .img{
+    width: 1020px;
+    margin: 9px 0 0 -1px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.img_shadow-in > .img > img{
+    width: 16px;
+    height: 16px;
+    margin-right:  5px;
+}
+.arrow{
+    width: 100%;
+    position: absolute;
+    top: 43%;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow button{
+    border: transparent;
+    text-indent: -9999px;   
+    width: 32px;
+    height: 55px;
+    /* position: absolute; */
+    /* margin: 0 600px; */
+}
+
+.arrow .before{
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/main/icon_brand_slide_button.png) 0 0 / 100% auto no-repeat;
+    /* top: 50%; */
+}
+.arrow .after{
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/main/icon_brand_slide_button.png) 0 0 / 100% auto no-repeat;
+    transform: scaleX(-1);
+    /* 백그라운드 이미지 뒤집기 */
+}
+
+
+
+
+/* brand-info 메인 이미지 밑의 상품광고 */
+
+.brand_info-item_img > img{
+    width: 100px;
+    height: 100px;
+}
+.brand_info-items{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px 40px 0;
+
+}
+
+.brand_info-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 37px;
+}
+
+.brand-ad-item_name{
+   
+    color: #000;
+
+    width: 335px;
+    height: 37px;
+    line-height: 18px;
+
+    word-break: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.brand_info-item_infomation > .item_flag{
+    margin-top: 7px;
+}
+
+/*  footer  */
+
+/* footer{
+
+} */
+.oneConts{
+    display: flex;
+    justify-content: center;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;  
+    border-top: 2.4px solid #AAAAAA;
+}
+.oneConts-lists{
+    display: flex;
+    justify-content: center;
+}
+
+.oneConts-lists li{
+    color: #000;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 18px 20px 0 0;
+    /* width: 100%; */
+    height: 34px;
+}
+
+.oneConts-lists :not(:first-child){
+    padding: 18px 20px 0 21px;
+}
+
+.oneConts li:not(li:last-child)::after{
+    content: "|";
+    color: #666;
+    position: relative;
+    right: -21px;
+}
+
+.family-group{
+    width: 235px;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    margin: 12px 0 0 170px;
+    background-color: #fff;
+    color: #777;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    background: url(https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_footer_arrow.png)
+    95% 50% no-repeat #fff;
+}
+
+.group{
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+/* twoConts */
+.twoConts-text{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.twoConts-text > img{
+    width: 145px;
+    height: 23px;
+
+    margin: 85px 50px 0 50px;
+}
+
+.twoConts-text_top{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    /* width: 1020px; */
+}
+
+.CJ_oliveyoung{
+    width: 1020px;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* padding-right: 0px; */
+}
+
+.CJ_olive-text{
+    padding-right:  30px;
+    line-height: 20px;
+}
+
+.CJ_oliveyoung b{
+    font-size: 12px;
+    color: #000;
+}
+.CJ_oliveyoung p{
+    font-size: 12px;
+    color: #777;
+   
+}
+
+.address:before {
+    content: "주소 : ";
+    color: #777;
+
+}
+
+.link{
+    margin-top: 10px;
+    border-bottom: 1px solid #333;
+    color: #000;
+    font-size: 12px;
+}
+.link::after{
+    content: "  >";
+    color: #333;
+}
+
+/*  twoConts-text_bottom */
+
+.twoConts-box{
+    width: 1020px;
+    height: 28px;
+    /* margin-left: 320px; */
+    padding: 20px 0 30px;
+    color: #777;
+    line-height: 30px;
+    font-size: 11px;
+
+    word-break: break-all;
+    
+}
+
+.threeConts{
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.threeConts ul{
+    width: 1020px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+
+    border-top: 2px solid #F9F9F9;
+}
+.threeConts-list li{
+    font-size: 11px;
+    color: #777;
+    margin-left: 11px;
+}
+
+.threeConts-list :not(:last-child):after{
+    content: "|"; 
+    font-size: 11px;
+    color: #777;
+    position: relative;
+    right: -5px;
+}
+
+.fourConts{
+    width: 1020px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #aaa;
+    font-weight: 700;
+}
+
+.conts{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-top: 1px solid #F9F9F9;
+}
+.sns h2{
+    color: #aaa;
+    font-size: 12px;
+    padding: 3px 1px 0 0;
+}
+.sns{
+    display: flex;
+}
+.sns img{
+    height: 22px;
+    margin-left: 15px;
+}
+
